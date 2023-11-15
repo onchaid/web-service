@@ -1,0 +1,339 @@
+.body {
+    display: block;
+    margin: 0px;
+}
+
+.bodyClass {
+    background-color: #010e18;
+    margin: 0%;
+    padding: 0%;
+    height: 100%;
+}
+
+.divHeader {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background {
+    content: url("../../assets/back.jpg");
+    position: relative;
+    width: 100%;    /* 1.440 x 900 */
+    height: auto;
+    max-width: 100%;
+    
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    z-index: 1;
+}
+
+.blackLens {
+    content: url("../../assets/back_background.png");
+    position: relative;
+    width: 100%;
+    height: 150%;
+    top: -150%;
+    left: -53.9rem;
+    
+    z-index: 2;
+    opacity: 40%;
+}
+
+.faceMesh {
+    content: url("../../assets/Face_mesh_2.gif");
+    position: relative;
+    width: 90%;
+    top: -300%;
+    left: 25rem;
+    
+    z-index: 3;
+    opacity: 40%;
+}
+
+.logo {
+    content: url("../../assets/onchaid_white_with_label.png");
+    position: relative;
+    width: 30%;   /* 260 x 175 */
+    top: -415%;
+    left: 10rem;
+    z-index: 4;
+}
+
+.divSlogan {
+    position: relative;
+    width: 30%;
+    height: 2rem;
+    top: -430%;
+    left: 10rem;
+    z-index: 5;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slogan {
+    color: white;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 1.25rem;
+    position: relative;
+    z-index: 6;
+}
+
+.divConnect {
+    position: relative;
+    width: 260px;
+    height: 100px;
+    top: -430%;
+    left: 14rem;
+    z-index: 7;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.connectButton {
+    display: flex; 
+    cursor: pointer; 
+    width: 250px;
+    padding: 8px 18px; 
+    border-radius: 2rem; 
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 15px; 
+    font-weight: bold;
+    
+    backdrop-filter: blur(5px);
+    border: 2.5px solid rgba(255, 255, 235, 10); 
+    box-shadow: rgba(255, 255, 235, 10) 0px 0px 15px;
+}
+
+.connectButton:hover {
+    border: 3px solid rgba(255, 255, 235, 20); 
+    box-shadow: rgba(255, 255, 235, 30) 0px 0px 20px;
+    box-shadow: rgba(70, 44, 187, 0.2) 0 -25px 18px -14px inset,rgba(44, 77, 187, 0.15) 0 1px 2px,rgba(44, 46, 187, 0.15) 0 2px 4px,rgba(65, 44, 187, 0.15) 0 4px 8px,rgba(44, 70, 187, 0.15) 0 8px 16px,rgba(46, 44, 187, 0.15) 0 16px 32px;
+}
+
+.arrowButton {
+    display: flex; 
+    cursor: pointer; 
+    width: 50px;
+    padding: 8px 18px; 
+    border-radius: 2rem; 
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 15px; 
+    font-weight: bold;
+    
+    backdrop-filter: blur(5px);
+    border: 2.5px solid rgba(255, 255, 235, 10); 
+    box-shadow: rgba(255, 255, 235, 10) 0px 0px 15px;
+}
+
+.arrowButton:hover {
+    border: 3px solid rgba(255, 255, 235, 20); 
+    box-shadow: rgba(255, 255, 235, 30) 0px 0px 20px;
+    box-shadow: rgba(70, 44, 187, 0.2) 0 -25px 18px -14px inset,rgba(44, 77, 187, 0.15) 0 1px 2px,rgba(44, 46, 187, 0.15) 0 2px 4px,rgba(65, 44, 187, 0.15) 0 4px 8px,rgba(44, 70, 187, 0.15) 0 8px 16px,rgba(46, 44, 187, 0.15) 0 16px 32px;
+}
+
+.divContent {
+    overflow: hidden;
+    display: flex;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+}
+
+
+
+.divTitle {
+    overflow: hidden;
+    display: flex;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.title {
+    color: white;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 4rem;
+    width: 100%;
+}
+
+.subTitle {
+    color: white;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.divIntroImg {
+    width: 40%;
+    height: 50%;
+    z-index: 8;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+}
+
+.divIntro {
+    width: 45%;
+    margin-left: 5%;
+    margin-top: 2rem;
+    color:white;
+}
+
+.introImg {
+    content: url("../../assets/NoImage.png");
+    position: relative;
+    width: 50%;
+    z-index: 9;
+}
+
+.divColumn {
+    height: 20rem;
+    width: 18%;
+    margin-top: 2rem;
+    margin-left: 1%;
+}
+
+.divVision {
+    width: 100%;
+    color:white;
+}
+
+.teamImg1 {
+    content: url("../../assets/LudovicoSforza.png");
+    position: relative;
+    z-index: 10;
+    width: 100%;
+}
+
+.teamImg2 {
+    content: url("../../assets/NoImage.jpg");
+    position: relative;
+    z-index: 10;
+    width: 100%;
+}
+
+.teamImg3 {
+    content: url("../../assets/DavidGimenez.png");
+    position: relative;
+    z-index: 10;
+    width: 100%;
+}
+
+.teamImg4 {
+    content: url("../../assets/AlexSabogal.png");
+    position: relative;
+    z-index: 10;
+    width: 100%;
+}
+
+.teamImg5 {
+    content: url("../../assets/DanielRuiz.png");
+    position: relative;
+    z-index: 10;
+    width: 100%;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #010e18;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.divSection {
+    padding-top: 3rem;
+}
+
+.nav {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end;
+}
+  
+.navItem {
+    display: inline;
+    margin-right: 20px;
+    width: auto;
+}
+  
+.navLink {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.accountInfo {
+    margin-left: 1rem;
+    font-weight: bold;
+}
+
+/* Carrusel */
+
+.divCarousel {
+    position: relative;
+    display: flex;
+    width: 90%;
+    overflow-x: scroll;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    z-index: 99;
+    scroll-snap-type: x mandatory;
+}
+
+.divCarousel div {
+    flex: 0 0 100%;
+    width: 100%;
+    object-fit: cover;
+
+    scroll-snap-align: center;
+}
+
+.divCarruselButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    left: 10px;
+    z-index: 100;
+}
+
+.divCarruselButton label {
+    width: 20px;
+    height: 20px;
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+  }
+
+.step {
+    flex: 0 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: red;
+  }
