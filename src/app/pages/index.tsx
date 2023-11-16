@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import css from '../css/home.module.css';
 import { ethers } from 'ethers';
 import detectEthereumProvider from '@metamask/detect-provider'
+import IdentificationBox from '../components/Identity';
 
 const Index: React.FC = () => {
   /******************************************************************************************************/
@@ -78,6 +79,16 @@ const Index: React.FC = () => {
     }
   };
 
+  const [identificationBoxVisible, setIdentificationBoxVisible] = useState(false);
+
+  const openIdentificationBox = () => {
+    setIdentificationBoxVisible(true);
+  };
+
+  const closeIdentificationBox = () => {
+    setIdentificationBoxVisible(false);
+  };
+
   return (
     <div className={css.bodyClass}>
         <header className={css.header}>
@@ -109,10 +120,13 @@ const Index: React.FC = () => {
             </div>
 
             <div className={css.divConnect} id='divConnect'>        
-                <label className={css.connectButton} onClick={handleConnect}>{connectWalletLabel}</label>
+                <label className={css.connectButton} onClick={openIdentificationBox}>{connectWalletLabel}</label>
             </div>
         </div>
       
+            {identificationBoxVisible && <IdentificationBox onClose={closeIdentificationBox} />}
+
+
         <section className={css.divSection} id="AboutAs">
             <div className={css.divTitle}>
                 <label className={css.title}>About us</label>

@@ -12,7 +12,7 @@
 
 .divHeader {
     height: 100vh;
-    overflow: hidden;
+    padding-top: 6vh;
 }
 
 .background {
@@ -336,4 +336,8 @@
     width: 100%;
     box-sizing: border-box;
     background-color: red;
+  }
+
+.top-to-btm{
+    position: relative;
   }
