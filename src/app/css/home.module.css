@@ -373,3 +373,12 @@
     borderRadius: '50%';
     padding: '20px' 
 }
+
+.modalButton {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    
+    backdrop-filter: blur(5px);
+    border: 2.5px solid rgba(255, 255, 235, 10); 
+    box-shadow: rgba(255, 255, 235, 10) 0px 0px 15px;
+}

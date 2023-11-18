@@ -78,6 +78,16 @@ const IdentificationBox: React.FC<IdentificationBoxProps> = ({ onClose }) => {
   }, []);
 
   return (
+    <div
+    style={{
+      position: 'fixed',
+      top: 0,
+      left: 0,
+      width: '100%',
+      height: '100%',
+      backgroundColor: 'rgba(0, 0, 0, 0.6)', // Adjust opacity here
+      zIndex: 9999, // Ensure it's on top
+    }}>
     <div className={css.customBackground}>
       <Typography variant="h6" style={{ textAlign: 'center' }}>Verify your identity</Typography>
       <div style={{ textAlign: 'center', margin: '20px', position: 'relative' }}>
@@ -101,11 +111,12 @@ const IdentificationBox: React.FC<IdentificationBoxProps> = ({ onClose }) => {
       {loading && (
               <HourglassEmpty style={{fontSize: '64px', color: 'black' }} />
             )}
-      {walletConnected ? <Typography className="relative flex" variant="h5"> Linked wallet: {account}</ Typography> : <></>}
+      {walletConnected ? <Typography className="relative flex" color="white" variant="h5"> Linked wallet: {account}</ Typography> : <></>}
       <Button variant="outlined" color={verificationComplete ? "success" : "primary"} fullWidth startIcon={<Face />} onClick={handleLogin2} style={{ marginTop: '10px'}}>Validate Face</Button>
       <Button variant="outlined" color="secondary" fullWidth startIcon={<Fingerprint />}>Validate Fingerprint</Button>
       <Button variant="outlined" color={walletConnected ? "success" : "secondary"} fullWidth startIcon={<AccountBalanceWallet />} onClick={handleLogin}>Connect Wallet</Button>
-      <Button variant="outlined" color="success" fullWidth style={{ marginTop: '10px' }} startIcon={<Check />} onClick={handleSubmit} disabled={!verificationComplete || submitDisabled}>Submit</Button>
+      <Button variant="outlined" color="success" fullWidth style={{ marginTop: '10px' }} startIcon={<Check />} onClick={onClose} disabled={!verificationComplete || submitDisabled}>Submit</Button>
+    </div>
     </div>
   );
 };
