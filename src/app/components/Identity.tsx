@@ -19,18 +19,15 @@ const IdentificationBox: React.FC<IdentificationBoxProps> = ({ onClose }) => {
     if (window.ethereum && window.ethereum.isMetaMask) {
       window.ethereum
         .request({ method: "eth_requestAccounts" })
-        .then((result) => {
+        .then((result: any) => {
           console.log(result[0]);
           setAccount(result[0]);
           setWalletConnected(true);
 
         })
-        .catch((error) => {
+        .catch((error: any) => {
           console.log("Could not detect Account", error);
         });
-    } else {
-      console.log("Need to install MetaMask");
-      onboarding.startOnboarding();
     }
   };
 
@@ -121,4 +118,4 @@ const IdentificationBox: React.FC<IdentificationBoxProps> = ({ onClose }) => {
   );
 };
 
-export default IdentificationBox;
+export default IdentificationBox
