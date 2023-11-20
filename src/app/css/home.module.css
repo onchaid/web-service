@@ -11,8 +11,9 @@
 }
 
 .divHeader {
-    height: 100vh;
+    height: 110vh;
     padding-top: 6vh;
+    overflow: hidden;
 }
 
 .background {
@@ -193,9 +194,24 @@
 }
 
 .introImg {
-    content: url("../../assets/NoImage.png");
+    content: url("../../assets/AboutUs.jpg");
     position: relative;
-    width: 50%;
+    width: 80%;
+    z-index: 9;
+    margin-top: 5%;
+}
+
+.whatIsImg {
+    content: url("../../assets/Decentralized_Identity.png");
+    position: relative;
+    width: 80%;
+    z-index: 9;
+}
+
+.sybilAttackImg {
+    content: url("../../assets/Sybil_Attack.png");
+    position: relative;
+    width: 60%;
     z-index: 9;
 }
 
@@ -215,35 +231,102 @@
     content: url("../../assets/LudovicoSforza.png");
     position: relative;
     z-index: 10;
-    width: 100%;
+    width: 90%;
+    padding-bottom: 5%;
 }
 
 .teamImg2 {
-    content: url("../../assets/NoImage.jpg");
+    content: url("../../assets/SantiagoYonzon.png");
     position: relative;
     z-index: 10;
-    width: 100%;
+    width: 90%;
+    padding-bottom: 9%;
 }
 
 .teamImg3 {
     content: url("../../assets/DavidGimenez.png");
     position: relative;
     z-index: 10;
-    width: 100%;
+    width: 90%;
+    padding-bottom: 6%;
 }
 
 .teamImg4 {
     content: url("../../assets/AlexSabogal.png");
     position: relative;
     z-index: 10;
-    width: 100%;
+    width: 90%;
+    padding-bottom: 4%;
 }
 
 .teamImg5 {
     content: url("../../assets/DanielRuiz.png");
     position: relative;
     z-index: 10;
-    width: 100%;
+    width: 90%;
+    padding-bottom: 5%;
+}
+
+.divFollowUs {
+    width: 20%;
+    margin-left: 20%;
+    color:white;
+    text-align: left;
+    align-content: left;
+    justify-content: left;
+    margin-top: 3%;
+    margin-left: 20%;
+    margin-bottom: 15%;
+}
+
+.divFollowUsImg {
+    width: 30%;
+    height: 30%;
+    z-index: 8;
+    text-align: left;
+    align-content: left;
+    justify-content: left;
+    display: flex;
+}
+
+.followUsImg {
+    background-color: white;
+    content: url("../../assets/FollowUs.jpeg");
+    position: relative;
+    width: 40%;
+    z-index: 11;
+    padding: 1%;
+}
+
+.divSocialNetwork {
+    display: inline-flex;
+}
+
+.divSocialNetworkLink {
+    margin-top: 1%;
+    margin-left: 5%;
+}
+
+.twitterImg {
+    background-color: white;
+    content: url("../../assets/Twitter.jpg");
+    position: relative;
+    width: 10%;
+    z-index: 11;
+}
+
+.githubImg {
+    content: url("../../assets/GitHub.png");
+    position: relative;
+    width: 10%;
+    z-index: 11;
+}
+
+.youtubeImg {
+    content: url("../../assets/Youtube_bw2.png");
+    position: relative;
+    width: 10%;
+    z-index: 11;
 }
 
 .header {

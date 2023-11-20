@@ -14,7 +14,7 @@ const Index: React.FC = () => {
   const initialState = { accounts: [] }
   const [wallet, setWallet] = useState(initialState)
   let accounts;
-  let connectWalletLabel = "Connect Wallet";
+  let connectWalletLabel = "Sign up";
 
   /******************************************************************************************************/
   /* Events */
@@ -96,11 +96,11 @@ const Index: React.FC = () => {
             
             <nav className={css.nav}>
                 <ul>
-                    <li className={css.navItem}><a className={css.navLink} href="#AboutAs">About as</a></li>
+                    <li className={css.navItem}><a className={css.navLink} href="#AboutAs">About us</a></li>
                     <li className={css.navItem}><a className={css.navLink} href="#Vision">Vision</a></li>
                     <li className={css.navItem}><a className={css.navLink} href="#WhatIs">What is</a></li>
-                    <li className={css.navItem}><a className={css.navLink} href="#CreateYourIdentity">Create your identity</a></li>
                     <li className={css.navItem}><a className={css.navLink} href="#Team">Team</a></li>
+                    <li className={css.navItem}><a className={css.navLink} href="#FollowUs">Follow us</a></li>
                 </ul>
             </nav>
         </header>
@@ -177,7 +177,7 @@ const Index: React.FC = () => {
                 </div>
 
                 <div className={css.divIntroImg}>
-                    <img className={css.introImg} alt="img1" />
+                    <img className={css.whatIsImg} alt="decentralizeIdentityImg" />
                 </div>
             </div>
 
@@ -187,7 +187,7 @@ const Index: React.FC = () => {
 
             <div className={css.divContent}>
                 <div className={css.divIntroImg}>
-                    <img className={css.introImg} alt="img1" />
+                    <img className={css.sybilAttackImg} alt="sybilAttackImg" />
                 </div>
 
                 <div className={css.divIntro}>
@@ -196,49 +196,6 @@ const Index: React.FC = () => {
                     <p>In the context of Web3 and blockchain-based systems, Sybil attacks pose a significant threat, as they can potentially undermine the integrity, trustworthiness, and security of decentralized operations.</p>
                     <br></br>
                     <p>OnchaID's innovative approach mitigates the risk of Sybil attacks by providing robust decentralized identity solutions, ensuring the authenticity and accountability of participants in the network.</p>
-                </div>
-            </div>
-        </section>
-
-        <section className={css.divSection} id="CreateYourIdentity">
-            <div className={css.divTitle}>
-                <label className={css.title}>Create your identity</label>
-            </div>
-
-            <div className={css.divContent}>
-            <div id='carrusel' className={css.divCarousel}>
-                <div className={css.step}>
-                    <label className={css.subTitle}>Registration</label>
-                        <div className={css.divIntro}>
-                            <p>Users provide biometric data as fingerprints, eye scans, etc. To prove their identity.</p>
-                        </div>
-                    </div>
-
-                    <div className={css.step}>
-                        <label className={css.subTitle}>Data  anonymization</label>
-                        <div className={css.divIntro}>
-                            <p>Provided data is hashed and then sent to the AI network to validate the user identity.</p>
-                        </div>
-                    </div>
-
-                    <div className={css.step}>
-                        <label className={css.subTitle}>Identity check</label>
-                        <div className={css.divIntro}>
-                            <p>Identity checkThe AI model compares the data and check if the provided credentials exist or match an existing user.</p>
-                        </div>
-                    </div>
-
-                    <div className={css.step}>
-                        <label className={css.subTitle}>Validation</label>
-                        <div className={css.divIntro}>
-                            <p>Once validated, user receives tokens and hashed data is stored in the blockchain.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="divCarruselButton">
-                    <label className={css.arrowButton} onClick={() => moverCarrusel(-1)}>←</label>
-                    <label className={css.arrowButton} onClick={() => moverCarrusel(1)}>→</label>
                 </div>
             </div>
         </section>
@@ -256,7 +213,7 @@ const Index: React.FC = () => {
 
                 <div className={css.divColumn}>
                     <img className={css.teamImg2} alt="Santiago"/>
-                    <label className={css.subTitle}>Santiago</label>
+                    <label className={css.subTitle}>Santiago Yanzon</label>
                 </div>
 
                 <div className={css.divColumn}>
@@ -276,21 +233,40 @@ const Index: React.FC = () => {
             </div>
         </section>
         
-        <div className={css.divTitle}>
-            <label className={css.title}>Follow us</label>
-        </div>
-
-        <div className={css.divContent}>
-            <div className={css.divIntro}>
-                <p>@onchaid</p>
-                <br></br>
-                <p>github.com/onchaid</p>
+        <section className={css.divSection} id="FollowUs">
+            <div className={css.divTitle}>
+                <label className={css.title}>Follow us</label>
             </div>
 
-            <div className={css.divIntroImg}>
-                <img className={css.introImg} alt="img1" />
+            <div className={css.divContent}>
+                <div className={css.divFollowUs}>
+                    <div className={css.divSocialNetwork}>
+                        <img className={css.twitterImg} alt="twitterImg" />
+                        <div className={css.divSocialNetworkLink}>
+                            <a href='https://twitter.com/onchaid'>Twitter</a>
+                        </div>
+                    </div>
+                    <br></br>
+                    <div className={css.divSocialNetwork}>
+                        <img className={css.githubImg} alt="githubImg" />
+                        <div className={css.divSocialNetworkLink}>
+                        <a href='https://github.com/onchaid'>Github</a>
+                        </div>
+                    </div>
+                    <br></br>
+                    <div className={css.divSocialNetwork}>
+                        <img className={css.youtubeImg} alt="youtubeImg" />
+                        <div className={css.divSocialNetworkLink}>
+                            <a href='https://www.youtube.com/'>Youtube</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div className={css.divFollowUsImg}>
+                    <img className={css.followUsImg} alt="followUsImg" />
+                </div>
             </div>
-        </div>
+        </section>
     </div>
   );
 };
